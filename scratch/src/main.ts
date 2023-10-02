@@ -1,19 +1,7 @@
-import { Controller, Module, Get } from '@nestjs/common'
+import AppModule from './app.module'
 import { NestFactory } from '@nestjs/core'
 
-@Controller() // decorator
-class AppController {
-    @Get()
-    getRootRoute() {
-        return 'hi there'
-    }
-}
 
-
-@Module({
-    controllers: [AppController]
-})
-class AppModule {}
 
 
 async function bootstrap() {
